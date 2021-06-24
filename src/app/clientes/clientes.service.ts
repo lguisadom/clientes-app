@@ -53,4 +53,8 @@ export class ClientesService {
       grupo: 0
     }
   }
+
+  getCantidadClientes(): number {
+    return this.clientes.length;
+  }
 }

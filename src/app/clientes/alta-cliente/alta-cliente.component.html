@@ -1,5 +1,9 @@
 <h2>Alta cliente</h2>
 <p>
+    <span>Id:</span>
+    <input type="text" value="{{getCantidadClientes()}}" readonly disabled>
+</p>
+<p>
     <span>Nombre:</span>
     <input type="text" [(ngModel)] = "cliente.nombre">
 </p>

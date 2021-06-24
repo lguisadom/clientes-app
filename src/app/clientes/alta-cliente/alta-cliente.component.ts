@@ -23,4 +23,8 @@ export class AltaClienteComponent implements OnInit {
     this.clientesService.agregarCliente(this.cliente);
     this.cliente = this.clientesService.nuevoCliente();
   }
+
+  getCantidadClientes(): number {
+    return this.clientesService.getCantidadClientes();
+  }
 }
