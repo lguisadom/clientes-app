@@ -15,6 +15,9 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     ClientesService
+  ],
+  exports: [
+    AltaClienteComponent
   ]
 })
 export class ClientesModule { }

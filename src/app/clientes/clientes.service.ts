@@ -6,7 +6,7 @@ import { Cliente, Grupo } from './clientes.model';
 })
 export class ClientesService {
 
-  private clientes: Clientes[];
+  private clientes: Cliente[];
   private grupos: Grupo[];
 
   constructor() {
@@ -28,6 +28,8 @@ export class ClientesService {
         nombre: "Deudores"
       }
     ];
+
+    this.clientes = [];
   }
 
   getGrupos(): Grupo[] {
